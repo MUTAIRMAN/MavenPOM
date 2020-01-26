@@ -1,5 +1,5 @@
 node {
-  stage('SCM CHECKOUT'){
+  stage('SCM Checkout'){
   git 'https://github.com/MUTAIRMAN/MavenPOM.git'
   }
   stage{'Compile-Package'){
