@@ -3,6 +3,7 @@ node {
   git 'https://github.com/MUTAIRMAN/MavenPOM'
   }
   stage{'Compile-Package'){
-  sh 'mvn package'
+  def mvnhome=tool name: 'MAVEN_HOME', type: 'maven'
+  sh "${mvnhome}/bin/mvn package"
   }
 }
